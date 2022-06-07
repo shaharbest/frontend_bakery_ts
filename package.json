@@ -11,7 +11,10 @@
     "json-server": "json-server --watch fakeDB.json"
   },
   "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
     "@material-ui/core": "^4.12.4",
+    "@mui/icons-material": "^5.8.3",
     "@ngneat/falso": "^5.7.0",
     "axios": "^0.27.2",
     "react": "^17.0.0",
