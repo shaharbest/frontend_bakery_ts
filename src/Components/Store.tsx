@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { Catalog } from "./Catalog";
-import { Pagination } from "./Pagination.tsx";
+import { Pagination } from "./Pagination";
 
 const dbUrl = "http://localhost:3000/products";
 
