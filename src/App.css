@@ -16,3 +16,8 @@ footer {
   position: fixed;
   bottom: 0;
 }
+
+.catalog {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}

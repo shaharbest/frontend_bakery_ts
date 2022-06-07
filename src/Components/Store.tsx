@@ -1,17 +1,33 @@
 import React from "react";
-import {} from '@material-ui/core';
 import { Product } from "../types";
+import { getRandomProducts } from "../utils";
+import { ProductSquare } from "./ProductSquare";
 
 export function Store() {
+  const products: Product[] = getRandomProducts(6);
+
   return (
     <div>
       <h1>store</h1>
       <div>
         <div className="catalog">
-          catalog
+          {!products
+            ? "loading..."
+            : products.map((p) => <ProductSquare key={p.id} product={p} />)}
         </div>
-        <div className="pages">pages</div>
+        <Pages />
       </div>
+    </div>
+  );
+}
+
+function Pages() {
+  return (
+    <div>
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
     </div>
   );
 }
