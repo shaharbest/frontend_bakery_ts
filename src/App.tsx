@@ -1,15 +1,17 @@
 import React from "react";
 import "./App.css";
-import { Outlet } from 'react-router-dom';
-import { Navbar } from "./Components/Navbar";
+import { Outlet } from "react-router-dom";
+import { Footer } from "./Components/Footer";
+import { Header } from "./Components/Header";
 
 function App() {
-  return <div className="App">
-    <Navbar />
-    <div className="content">
+  return (
+    <div className="App">
+      <Header />
       <Outlet />
+      <Footer />
     </div>
-  </div>;
+  );
 }
 
 export default App;
